@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PlayThatSong_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="136" height="30" alignment="left" text="Song" textAlignment="center" numberOfLines="0" id="hUa-Vs-949">
+                            <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        </label>
+                        <group width="1" alignment="left" verticalAlignment="center" id="Azb-pM-Rhl">
+                            <items>
+                                <button width="59" alignment="left" title="&lt;" id="i6G-xv-IJI">
+                                    <color key="backgroundColor" red="0.21939259352326546" green="0.8126631961732026" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="previousSongButtonPressed" destination="AgC-eL-Hgc" id="CNP-t3-nof"/>
+                                    </connections>
+                                </button>
+                                <button width="59" alignment="right" title="&gt;" id="MPm-Qv-WOz">
+                                    <color key="backgroundColor" red="0.21939259350000001" green="0.81266319620000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <action selector="nextSongButtonPressed" destination="AgC-eL-Hgc" id="2Vx-KT-uPx"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Play" id="C4n-cS-KTu">
+                            <color key="titleColor" red="0.86484809645845151" green="1" blue="0.53215760115700528" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="1" green="0.36561231105270742" blue="0.34444433470655977" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="playButtonPressed" destination="AgC-eL-Hgc" id="M0P-eL-mk3"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <color key="backgroundColor" red="0.40771451240000001" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="songTitleLabel" destination="hUa-Vs-949" id="1sw-x4-2Vu"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
